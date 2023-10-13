@@ -1,0 +1,18 @@
+{% extends 'base/main.html' %}
+
+{% block container %}
+<div class = top-bar>
+    <h1>Registro de usuario</h1>
+</div>
+
+
+<div class="body-card">
+    <form  method="post">
+        {% csrf_token %}
+        {{form.as_p}}
+        <input type="submit" value="Registrar">
+    </form>
+</div>
+
+<p>¿Ya tienes cuenta? <a style="font-weight: bold; color:blue;" href="{% url 'login' %}">Acceder</a></p>
+{% endblock container %}

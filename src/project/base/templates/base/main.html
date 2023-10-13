@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abel&family=Lato:ital,wght@1,300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: rgb(200, 240, 240);
+            font-family: 'Abel', sans-serif;
+            padding-top: 60px;
+        }
+        .container{
+            max-width: 550px;
+            margin: auto;
+            background-color: rgb(239, 248, 248);
+            -webkit-box-shadow: 2px 2px 13px -4px rgba(0, 0, 0, 0.21);
+            box-shadow: 2px 2px 13px -4px rgba(0, 0, 0, 0.21);
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Lato', sans-serif;
+        }
+        a {
+            color:#ffffff;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        p {
+            color:#3A8ACC;
+            text-decoration: none;
+        }
+
+        .top-bar {
+            display: flex;
+            justify-content: space-between;
+            color: #ffffff;
+            padding: 10px;
+            border-radius: 5px 5px 0 0;
+            background: linear-gradient(90deg, #4D9FE3 0%, #3A8ACC 43%, #3A8ACC 100%);
+            text-decoration: none;
+        }
+
+        .box-task {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: #ffffff;
+            border-top: 1px solid rgb(225, 225, 225);
+        }
+
+        .title-task {
+            display: flex;
+        }
+
+        .title-task a {
+            text-decoration: none;
+            color: #3A8ACC;
+            margin-left: 10px;
+        }
+
+        .icon-task-complete {
+            width: 20px;
+            height: 20px;
+            border-radius: 50px;
+            background-color: rgb(28, 175, 52);
+        }
+
+        .icon-task-uncomplete {
+            width: 20px;
+            height: 20px;
+            border-radius: 50px;
+            background-color: rgb(177, 18, 18);
+        }
+
+        .delete-link{
+            text-decoration: none;
+            color: rgb(255, 0, 0);
+            font-size: 22px;
+            font-weight: 900;
+            line-height: 0;
+        }
+
+        .update-link{
+            text-decoration: none;
+            color: rgb(0, 0, 0);
+            font-size: 22px;
+            font-weight: 900;
+            line-height: 0;
+            align-items: end;
+        }
+
+        #box-add-find{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px;
+            border-radius: 0 0 5px 5px;
+        }
+
+        .link-add{
+            text-decoration: none;
+            color: #3A8ACC;
+            font-size: 42px;
+            text-shadow: 1px 1px #1a70b8;
+            font-weight: 900;
+            line-height: 0;
+        }
+
+        input[type=text],
+        input[type=password],
+        textarea {
+            width: 90%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+
+        }
+
+        label {
+            padding-top: 10px !important;
+            display: block;
+            color:rgb(0, 0, 0);
+        }
+
+        .button {
+            background-color: #1a70b8;
+            color: #FAFAFA;
+            padding: 10px;
+            border: 1px solid #094e86;
+            font-size: 14px;
+            border-radius: 5px;
+            cursor: pointer;
+            text-decoration: none;
+            margin:3px 3px 10px 3px;
+        }
+
+        .body-card{
+            margin: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        {% block container %}
+
+        {% endblock container %}
+    </div>
+</body>
+</html>
